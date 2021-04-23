@@ -48,7 +48,7 @@ present(CHILD_ID_TEMP, S_TEMP);
 void setup()
 {
 delay(2000); //Wait 2 seconds before starting sequence
-Serial.begin(9600);
+Serial.begin(115200);
 if (UPDATE_INTERVAL <= dht.getMinimumSamplingPeriod()) 
 {
 Serial.println("Warning: UPDATE_INTERVAL is smaller than supported by the sensor!");
